@@ -88,7 +88,7 @@ async function sendVolumeMessage() {
   }
 }
 
-cron.schedule('* * * * *', sendVolumeMessage);
+cron.schedule('*/5 * * * *', sendVolumeMessage);
 
 app.listen(3000, () => {
   console.log('Server is running on port 3000');
